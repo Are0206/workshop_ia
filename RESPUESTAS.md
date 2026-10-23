@@ -46,9 +46,26 @@ _Mi respuesta / análisis:_
 
 ## A1 · Ejecuta la app RAG de punta a punta
 
-_Evidencia:_ …
+_Evidencia:_ 
 
-_Mi respuesta / análisis:_
+
+_Mi respuesta / análisis:
+
+| # | Pregunta | Respuesta | Fuentes recuperadas |
+|---|---|---|---|
+| 1 | ¿Cuál es el precio del plan Enterprise de CloudSync Pro? | El plan Enterprise cuesta $49/mes por usuario con compromiso anual. | CloudSync Pro — Precios; Onboarding; Política de reembolsos |
+| 2 | ¿Cuántos días pueden trabajar remotamente los empleados? | Los empleados pueden trabajar de forma remota hasta 3 días por semana. | Política de trabajo remoto; Onboarding; Política de reembolsos |
+| 3 | ¿Qué pasa con los reembolsos mayores a $100? | Requieren la aprobación del supervisor; una vez aprobados, se procesan en 3 a 5 días hábiles al método de pago original. | Política de reembolsos; Política de trabajo remoto; CloudSync Pro — Precios |
+| 4 | ¿Qué ocurre durante la primera semana de onboarding? | Se completan los módulos obligatorios de seguridad, cumplimiento y cultura de la empresa. | Onboarding; Política de trabajo remoto; Política de reembolsos |
+| 5 | ¿Cuál es el horario de atención al cliente? *(no está en los documentos)* | No tengo esa información en el contexto proporcionado. | Política de trabajo remoto; CloudSync Pro — Precios; Política de reembolsos |
+
+**Observaciones:**
+- En las preguntas 1 a 4, la **primera fuente recuperada es siempre el documento correcto**.
+- Siempre aparecen 3 fuentes porque el retriever usa k = 3 y solo hay 4 documentos; con un
+  umbral de similitud de 0.3, casi todos lo superan. Las otras dos fuentes son ruido.
+- En la pregunta 5 se recuperaron documentos, pero ninguno tenía la respuesta, y el modelo
+  respondió que no tiene esa información en lugar de inventar, porque el prompt le indica
+  usar únicamente el contexto.
 
 
 ## A2 · Tu propio corpus de documentos
