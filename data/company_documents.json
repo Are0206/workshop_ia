@@ -1,0 +1,83 @@
+[
+  {
+    "id": "info_001",
+    "title": "Horarios y sedes",
+    "content": "Café Altamira tiene dos sedes en Medellín: El Poblado y Laureles. De lunes a viernes abre de 7:00 a.m. a 8:00 p.m. y los sábados de 8:00 a.m. a 9:00 p.m. Los domingos y festivos solo abre la sede El Poblado, de 9:00 a.m. a 6:00 p.m. La sede Laureles tiene parqueadero gratuito para clientes; la sede El Poblado no tiene parqueadero.",
+    "metadata": {
+      "department": "general",
+      "type": "informacion"
+    }
+  },
+  {
+    "id": "menu_001",
+    "title": "Menú de bebidas calientes",
+    "content": "Tinto: $3.000. Capuchino: $7.500. Latte: $8.000. Mocaccino: $9.000. Té chai: $8.500. Chocolate caliente: $7.000. La leche de almendras o de avena tiene un costo adicional de $2.000. Todas las bebidas calientes se pueden pedir en tamaño grande por $1.500 adicionales.",
+    "metadata": {
+      "department": "ventas",
+      "type": "precios"
+    }
+  },
+  {
+    "id": "menu_002",
+    "title": "Menú de bebidas frías y postres",
+    "content": "Café frío (cold brew): $8.500. Frappé de café: $11.000. Jugo natural en agua: $7.000 y en leche: $8.500. Limonada de coco: $9.500. Postres: brownie de chocolate $6.500, cheesecake de maracuyá $9.000, torta de zanahoria $8.000 y pandebono $3.500.",
+    "metadata": {
+      "department": "ventas",
+      "type": "precios"
+    }
+  },
+  {
+    "id": "cocina_001",
+    "title": "Alergias e ingredientes",
+    "content": "Todos los postres contienen gluten, excepto el brownie de chocolate, que es sin gluten. El pandebono y el cheesecake contienen lácteos. Los productos con frutos secos se marcan con una etiqueta naranja en la vitrina. Café Altamira no garantiza ausencia total de trazas, porque todo se prepara en la misma cocina.",
+    "metadata": {
+      "department": "cocina",
+      "type": "salud"
+    }
+  },
+  {
+    "id": "ventas_001",
+    "title": "Domicilios",
+    "content": "Los domicilios se piden por WhatsApp entre las 8:00 a.m. y las 6:00 p.m. El pedido mínimo es de $20.000. El domicilio cuesta $4.000 y es gratis en pedidos mayores a $50.000. El tiempo de entrega promedio es de 40 minutos. Solo se entregan pedidos dentro de un radio de 3 km de cada sede.",
+    "metadata": {
+      "department": "ventas",
+      "type": "politica"
+    }
+  },
+  {
+    "id": "mercadeo_001",
+    "title": "Programa de fidelización",
+    "content": "Con la tarjeta Altamira cada compra suma un sello. Al completar 10 sellos se recibe una bebida gratis de cualquier tamaño. Los sellos vencen a los 6 meses. En el mes de cumpleaños, el cliente recibe un postre gratis presentando su cédula. La tarjeta es gratuita y se pide en caja.",
+    "metadata": {
+      "department": "mercadeo",
+      "type": "politica"
+    }
+  },
+  {
+    "id": "rrhh_001",
+    "title": "Normas para empleados",
+    "content": "Los turnos son de 8 horas con 30 minutos de almuerzo. Los cambios de turno deben pedirse al administrador con al menos 48 horas de anticipación. Cada empleado recibe una bebida gratis por turno. El uniforme es delantal verde y gorra negra. Las ausencias por enfermedad deben justificarse con incapacidad médica.",
+    "metadata": {
+      "department": "recursos_humanos",
+      "type": "politica"
+    }
+  },
+  {
+    "id": "ventas_002",
+    "title": "Reservas y eventos",
+    "content": "El segundo piso de la sede Laureles se puede reservar para eventos de hasta 25 personas. La reserva cuesta $150.000 y se descuenta del consumo. Se debe reservar con mínimo 5 días de anticipación por correo a eventos@cafealtamira.co. Las cancelaciones con menos de 48 horas no tienen reembolso.",
+    "metadata": {
+      "department": "ventas",
+      "type": "procedimiento"
+    }
+  },
+  {
+    "id": "finanzas_001",
+    "title": "Medios de pago y facturación",
+    "content": "Se aceptan efectivo, tarjetas débito y crédito, Nequi y Daviplata. No se aceptan cheques. La factura electrónica se envía al correo del cliente si la solicita al momento de pagar, presentando su NIT o cédula. No se hacen facturas de compras de días anteriores.",
+    "metadata": {
+      "department": "finanzas",
+      "type": "politica"
+    }
+  }
+]
