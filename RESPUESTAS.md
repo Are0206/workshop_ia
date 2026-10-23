@@ -49,7 +49,7 @@ _Mi respuesta / análisis:_
 _Evidencia:_ 
 
 
-_Mi respuesta / análisis:
+_Mi respuesta / análisis:_
 
 | # | Pregunta | Respuesta | Fuentes recuperadas |
 |---|---|---|---|
@@ -73,6 +73,32 @@ _Mi respuesta / análisis:
 _Evidencia:_ …
 
 _Mi respuesta / análisis:_
+
+| # | Pregunta | Respuesta | Fuentes recuperadas | ¿Correcta? |
+|---|---|---|---|---|
+| 1 | ¿Cuánto cuesta un latte con leche de avena? | Cuesta $10.000. | Menú de bebidas calientes; Menú de bebidas frías y postres | ✅ Sí ($8.000 + $2.000) |
+| 2 | ¿Puedo ir el domingo a la sede Laureles? | No, los domingos solo abre la sede El Poblado; la sede Laureles está cerrada. | Horarios y sedes; Reservas y eventos | ✅ Sí |
+| 3 | Soy celíaco, ¿qué postre puedo comer? | El brownie de chocolate, ya que es el único postre sin gluten. | Alergias e ingredientes; Programa de fidelización; Menú de bebidas frías y postres | ✅ Sí |
+| 4 | ¿Con cuánta anticipación debo reservar para un evento? | Con al menos 5 días de anticipación. | Reservas y eventos; Normas para empleados | ✅ Sí |
+| 5 | ¿Puedo pagar con Nequi? | Sí, puedes pagar con Nequi. | Medios de pago y facturación; Programa de fidelización | ✅ Sí |
+| 6 | ¿Tienen wifi gratis? *(no está en los documentos)* | No tengo esa información en el contexto proporcionado. | Programa de fidelización; Domicilios | ✅ Sí (no inventó) |
+| 7 | ¿Venden almuerzos? *(no está en los documentos)* | No tengo esa información en el contexto proporcionado. | Normas para empleados; Horarios y sedes; Menú de bebidas frías y postres | ✅ Sí (no inventó) |
+
+**Observaciones:**
+- En todas las preguntas con respuesta, la **primera fuente es el documento correcto**.
+- La pregunta 1 combina dos datos del mismo documento (precio del latte + recargo por leche
+  de avena), y el modelo hizo la suma correctamente.
+- La pregunta 3 no menciona la palabra "gluten", pero el sistema recuperó el documento de
+  alergias: la búsqueda por embeddings funciona por **significado**, no por palabras exactas.
+- En las preguntas 6 y 7 se recuperaron documentos poco relacionados, pero el modelo no
+  inventó una respuesta.
+
+**Ajuste de chunk_size:** mis documentos son cortos (entre 245 y 332 caracteres). Con el valor
+original de 400, cada documento quedaba en un solo chunk, que mezclaba varios temas (por
+ejemplo, todos los precios del menú juntos). Lo bajé a 200, con 30 de overlap, para que cada
+documento se divida en unos 2 fragmentos más específicos. Así el retriever trae el fragmento
+que realmente responde la pregunta. El splitter corta por puntos, así que las oraciones no
+quedan partidas.
 
 
 ## A3 · Ingeniería del prompt (antes y después)
