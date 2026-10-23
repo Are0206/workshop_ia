@@ -107,6 +107,27 @@ _Evidencia:_ …
 
 _Mi respuesta / análisis:_
 
+## Comparación
+
+| Tipo | Pregunta | Antes | Después |
+|---|---|---|---|
+| Fácil | ¿Puedo pagar con Nequi? | Sí, puedes pagar con Nequi. | Sí, se acepta Nequi como medio de pago. [Medios de pago y facturación] |
+| Ambigua | Soy celíaco, ¿qué postre puedo comer? | Puedes comer el brownie de chocolate, ya que es el único postre sin gluten. | Puedes comer el brownie de chocolate, ya que es el único postre sin gluten. [Alergias e ingredientes] |
+| Fuera de contexto | ¿Venden almuerzos? | No tengo esa información en el contexto proporcionado. | No encontré esa información en los documentos disponibles. |
+
+## Conclusión
+
+- **La instrucción con más efecto fue la de citar el documento entre corchetes.** Antes las
+  respuestas no indicaban de dónde salía la información; ahora cada respuesta termina con
+  el título correcto (`[Medios de pago y facturación]`, `[Alergias e ingredientes]`). Eso
+  permite verificar la respuesta contra la fuente.
+- **La frase fija se cumplió exactamente:** en la pregunta fuera de contexto respondió
+  palabra por palabra *"No encontré esa información en los documentos disponibles."*, y
+  correctamente no citó ningún documento, porque no usó ninguno.
+- **Ninguna instrucción fue ignorada.** La regla de máximo 3 oraciones no tuvo un efecto
+  visible, porque las respuestas ya eran de una sola oración antes del cambio; para ponerla
+  a prueba habría que hacer una pregunta que requiera una respuesta más larga.
+
 
 ## A4 · Muestra el score de similitud en las fuentes
 
